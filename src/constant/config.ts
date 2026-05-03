@@ -1,7 +1,8 @@
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL?.trim() || 'http://localhost:3000';
+
 export const siteConfig = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  title: 'SMAN 1 Tenggarang Graduation 2026',
+  description: 'A website for SMAN 1 Tenggarang Graduation 2026',
+  url: siteUrl,
 };

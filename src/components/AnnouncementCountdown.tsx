@@ -14,7 +14,7 @@ interface AnnouncementCountdownProps {
   onStateChange?: (isExpired: boolean) => void;
 }
 
-const ANNOUNCEMENT_TARGET_WIB = '2026-05-04T06:00:00+07:00';
+const ANNOUNCEMENT_TARGET_WIB = '2026-05-04T12:00:00+07:00';
 
 export default function AnnouncementCountdown({
   onStateChange,

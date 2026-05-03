@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
 export type Student = {
-  nis: string;
+  nisn: string;
   name: string;
 };
 
@@ -14,6 +14,7 @@ export default function GraduationPage() {
   const [foundStudent, setFoundStudent] = useState<Student | null>(null);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
+  const [certificateRevealed, setCertificateRevealed] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
@@ -40,24 +41,38 @@ export default function GraduationPage() {
     }
   }, [foundStudent]);
 
+  useEffect(() => {
+    if (!foundStudent) {
+      setCertificateRevealed(false);
+      return;
+    }
+
+    setCertificateRevealed(false);
+    const revealTimer = window.setTimeout(() => {
+      setCertificateRevealed(true);
+    }, 180);
+
+    return () => window.clearTimeout(revealTimer);
+  }, [foundStudent]);
+
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
     setFoundStudent(null);
 
     if (!nis.trim()) {
-      setError('Masukkan NIS Anda');
+      setError('Masukkan NISN Anda');
       return;
     }
 
     const student = students.find(
-      (s) => s.nis.toLowerCase() === nis.toLowerCase().trim()
+      (s) => s.nisn.toLowerCase() === nis.toLowerCase().trim()
     );
 
     if (student) {
       setFoundStudent(student);
     } else {
-      setError('NIS tidak ditemukan');
+      setError('NISN tidak ditemukan');
       setNis('');
     }
   };
@@ -74,183 +89,245 @@ export default function GraduationPage() {
 
   if (loading) {
     return (
-      <div className='min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100'>
-        <div className='text-gray-600'>Memuat data...</div>
+      <div
+        className='min-h-screen flex items-center justify-center bg-[#001f3f]'
+        style={{
+          backgroundImage: 'url(/images/background.png)',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className='text-white text-center'>Memuat data...</div>
       </div>
     );
   }
 
   return (
-    <div className='min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8 px-4 flex flex-col'>
-      {/* Audio Element */}
-      <audio ref={audioRef} loop>
-        <source src='/audio/mars.mp3' type='audio/mpeg' />
-      </audio>
+    <div
+      className='min-h-screen bg-[#001f3f] py-8 px-4 flex flex-col'
+      style={{
+        backgroundImage: 'url(/images/background.png)',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className='mx-auto w-full max-w-5xl overflow-hidden rounded-[2.5rem] border border-white/20 bg-[#001f3f]/92 shadow-[0_28px_90px_rgba(0,0,0,0.35)] backdrop-blur-sm'>
+        <div className='bg-transparent px-4 py-6 sm:px-6 lg:px-8'>
+          {/* Audio Element */}
+          <audio ref={audioRef} loop>
+            <source src='/audio/mars.mp3' type='audio/mpeg' />
+          </audio>
 
-      {/* Header - Always at Top */}
-      <div className='max-w-4xl mx-auto w-full mb-8'>
-        <div className='flex justify-between items-center bg-white rounded-lg shadow-lg p-6'>
-          {/* Logo - Left */}
-          <div className='flex-shrink-0'>
-            <Image
-              src='/images/logo-smasga.png'
-              alt='Logo SMASGA'
-              width={128}
-              height={128}
-              className='h-32 w-32'
-            />
-          </div>
+          {/* Header - Always at Top */}
+          <div className='mb-8'>
+            <div className='relative overflow-hidden rounded-[1.75rem] border border-transparent bg-[#06213a] p-5 shadow-[0_10px_26px_rgba(0,0,0,0.18)] md:p-6'>
+              {/* Opaque header background to prevent patterned background from showing through and causing banding */}
 
-          {/* Title - Right */}
-          <div className='text-center flex-1'>
-            <h1 className='text-5xl font-bold text-purple-900 mb-2'>
-              SMASGA JUARA
-            </h1>
-          </div>
-        </div>
-      </div>
+              <div className='relative flex items-center justify-between gap-4'>
+                <div className='flex-shrink-0'>
+                  <Image
+                    src='/images/logo-smasga.png'
+                    alt='Logo SMASGA'
+                    width={128}
+                    height={128}
+                    className='h-24 w-24 drop-shadow-[0_6px_14px_rgba(0,0,0,0.18)] md:h-28 md:w-28'
+                  />
+                </div>
 
-      {/* Main Content */}
-      <div className='flex-1 flex flex-col'>
-        {!foundStudent ? (
-          // Search Form - Centered View
-          <div className='flex-1 flex flex-col items-center justify-center'>
-            <div className='max-w-4xl w-full'>
-              {/* Main Header */}
-              <div className='text-center mb-8'>
-                <h2 className='text-4xl font-bold text-gray-800 mb-2'>
-                  Pengumuman Kelulusan
-                </h2>
-                <p className='text-xl text-gray-600 mb-1'>
-                  SMA Negeri 1 Tenggarang
-                </p>
-                <p className='text-lg text-blue-700 font-semibold mb-4'>
-                  Berkarakter, Berprestasi, dan Kompetitif
-                </p>
-                <p className='text-gray-500'>
-                  Masukkan NIS Anda untuk melihat sertifikat
-                </p>
-              </div>
-
-              {/* Search Form */}
-              <div className='bg-white rounded-lg shadow-lg p-8 mb-8'>
-                <form onSubmit={handleSearch} className='space-y-4'>
-                  <div>
-                    <label
-                      htmlFor='nis'
-                      className='block text-sm font-medium text-gray-700 mb-2'
-                    >
-                      Nomor Induk Siswa (NIS)
-                    </label>
-                    <input
-                      type='text'
-                      id='nis'
-                      value={nis}
-                      onChange={(e) => setNis(e.target.value)}
-                      placeholder='Masukkan NIS Anda...'
-                      className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none'
-                      autoFocus
-                    />
-                  </div>
-                  {error && <p className='text-red-500 text-sm'>{error}</p>}
-                  <button
-                    type='submit'
-                    className='w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 transition'
-                  >
-                    Cari Sertifikat
-                  </button>
-                </form>
+                <div className='flex-1 text-center'>
+                  <h1 className='mt-2 text-3xl font-black tracking-[0.22em] text-[#f7e1b2] drop-shadow-[0_1px_6px_rgba(0,0,0,0.28)] md:text-5xl'>
+                    SMASGA JUARA
+                  </h1>
+                </div>
               </div>
             </div>
           </div>
-        ) : (
-          // Certificate View - Normal Layout
-          <div className='max-w-4xl mx-auto w-full'>
-            {/* Certificate */}
-            <div className='space-y-6'>
-              <div className='bg-gradient-to-b from-amber-50 to-amber-100 rounded-lg shadow-2xl p-12 text-center border-8 border-purple-900'>
-                {/* Certificate Header */}
-                <div className='mb-8'>
-                  <h2 className='text-4xl font-bold text-purple-900 mb-2'>
-                    SERTIFIKAT KELULUSAN
-                  </h2>
-                  <div className='h-1 bg-gradient-to-r from-purple-900 to-purple-700 max-w-xs mx-auto'></div>
-                </div>
 
-                {/* Certificate Content */}
-                <div className='space-y-6 mb-8'>
-                  <p className='text-gray-700'>
-                    Dengan ini kami sertifikasi bahwa
-                  </p>
-
-                  <div className='bg-white bg-opacity-60 rounded-lg py-4 px-6'>
-                    <p className='text-sm text-gray-600 mb-2'>Nama Siswa</p>
-                    <p className='text-3xl font-bold text-amber-900'>
-                      {foundStudent.name.toUpperCase()}
-                    </p>
-                  </div>
-
-                  <div className='bg-white bg-opacity-60 rounded-lg py-4 px-6'>
-                    <p className='text-sm text-gray-600 mb-2'>
-                      Nomor Induk Siswa
-                    </p>
-                    <p className='text-2xl font-semibold text-amber-900'>
-                      {foundStudent.nis}
-                    </p>
-                  </div>
-
-                  <div className='space-y-3'>
-                    <p className='text-gray-700'>
-                      Telah berhasil menyelesaikan program pembelajaran pada
-                    </p>
-                    <p className='text-lg font-semibold text-amber-900'>
+          {/* Main Content */}
+          <div className='flex min-h-[calc(100vh-11rem)] flex-col'>
+            {!foundStudent ? (
+              // Search Form - Centered View
+              <div className='flex-1 flex flex-col items-center justify-center'>
+                <div className='max-w-4xl w-full'>
+                  {/* Main Header */}
+                  <div className='text-center mb-8'>
+                    <h2 className='text-4xl font-bold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)] mb-2'>
+                      Pengumuman Kelulusan
+                    </h2>
+                    <p className='text-xl text-white/85 drop-shadow-[0_1px_4px_rgba(0,0,0,0.35)] mb-1'>
                       SMA Negeri 1 Tenggarang
                     </p>
-                    <p className='text-gray-700'>Tahun Ajaran 2025/2026</p>
-                  </div>
-
-                  <div className='pt-4'>
-                    <p className='text-gray-700 italic'>
-                      "Semoga ilmu yang telah didapat dapat bermanfaat"
-                    </p>
-                    <p className='text-gray-700 mt-2'>
-                      untuk masa depan yang cerah
+                    <p className='text-lg text-[#f6dfb0] font-semibold drop-shadow-[0_1px_4px_rgba(0,0,0,0.35)] mb-4'>
+                      Berkarakter, Berprestasi, dan Kompetitif
                     </p>
                   </div>
-                </div>
 
-                {/* Footer */}
-                <div className='text-sm text-gray-600 pt-4'>
-                  <p>Dikeluarkan di Tenggarang</p>
-                  <p>Tanggal: {new Date().toLocaleDateString('id-ID')}</p>
+                  {/* Search Form */}
+                  <div className='bg-[#06213a]/95 rounded-[1.5rem] border border-[#f6dfb0]/20 shadow-lg p-8 mb-8 backdrop-blur-sm'>
+                    <form onSubmit={handleSearch} className='space-y-4'>
+                      <div>
+                        <label
+                          htmlFor='nis'
+                          className='block text-sm font-medium text-[#f6dfb0] mb-2'
+                        >
+                          Nomor Induk Siswa Nasional (NISN)
+                        </label>
+                        <input
+                          type='text'
+                          id='nis'
+                          value={nis}
+                          onChange={(e) => setNis(e.target.value)}
+                          placeholder='Masukkan NISN Anda...'
+                          className='w-full px-4 py-2 border border-[#f6dfb0]/30 rounded-lg bg-white/90 focus:ring-2 focus:ring-[#f6dfb0] focus:border-transparent outline-none text-slate-800'
+                          autoFocus
+                        />
+                      </div>
+                      {error && (
+                        <p className='text-amber-300 text-sm'>{error}</p>
+                      )}
+                      <button
+                        type='submit'
+                        className='w-full bg-gradient-to-r from-[#f6dfb0] to-[#e8c858] text-[#06213a] py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition'
+                      >
+                        Lihat Hasil
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
+            ) : (
+              // Certificate View - Normal Layout
+              <div className='max-w-4xl mx-auto w-full'>
+                {/* Certificate */}
+                <div className='space-y-6'>
+                  <div className='relative overflow-hidden rounded-[2rem] border border-[#f6dfb0]/40 bg-gradient-to-br from-[#06213a]/20 to-[#0f3354]/20 p-4 shadow-[0_24px_80px_rgba(6,33,58,0.35)] backdrop-blur-sm'>
+                    <div
+                      className={`relative rounded-[1.5rem] border border-[#f6dfb0]/50 bg-gradient-to-b from-[#fffdf7] to-[#fff7ea] p-6 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.8),_0_2px_8px_rgba(6,33,58,0.15)] transition-all duration-700 ease-out md:p-12 ${
+                        certificateRevealed
+                          ? 'opacity-100 translate-y-0'
+                          : 'opacity-0 translate-y-4'
+                      }`}
+                    >
+                      <div className='pointer-events-none absolute inset-0 overflow-hidden rounded-[1.5rem]'>
+                        <div
+                          className={`absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-[#6a3518] via-[#9d5625] to-[#d8a05c] opacity-95 transition-transform duration-1000 ease-[cubic-bezier(.22,1,.36,1)] ${
+                            certificateRevealed
+                              ? '-translate-x-[105%]'
+                              : 'translate-x-0'
+                          }`}
+                        />
+                        <div
+                          className={`absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-[#6a3518] via-[#9d5625] to-[#d8a05c] opacity-95 transition-transform duration-1000 ease-[cubic-bezier(.22,1,.36,1)] ${
+                            certificateRevealed
+                              ? 'translate-x-[105%]'
+                              : 'translate-x-0'
+                          }`}
+                        />
+                      </div>
 
-              {/* Action Buttons */}
-              <div className='flex gap-4 justify-center'>
-                <button
-                  onClick={handleReset}
-                  className='bg-gray-600 text-white py-2 px-6 rounded-lg font-medium hover:bg-gray-700 transition'
-                >
-                  Cari Siswa Lain
-                </button>
-                <button
-                  onClick={() => window.print()}
-                  className='bg-green-600 text-white py-2 px-6 rounded-lg font-medium hover:bg-green-700 transition'
-                >
-                  Cetak/Unduh
-                </button>
+                      <div className='relative z-10'>
+                        <div className='mb-8 space-y-3'>
+                          <h2 className='text-3xl font-black tracking-[0.2em] text-amber-950 drop-shadow-sm md:text-5xl'>
+                            SURAT KEPUTUSAN KELULUSAN
+                          </h2>
+                          <p className='mx-auto max-w-[18rem] text-center text-[0.62rem] font-semibold leading-tight tracking-[0.08em] text-amber-900/80 sm:max-w-none sm:text-sm sm:tracking-[0.18em] md:text-lg md:tracking-[0.3em] md:whitespace-nowrap'>
+                            NO. SK: 400.3.8/194/101.6.4.8/2026
+                          </p>
+                          <div className='mx-auto h-1.5 w-48 rounded-full bg-gradient-to-r from-transparent via-amber-800 to-transparent' />
+                        </div>
+
+                        <div className='mx-auto max-w-2xl space-y-6'>
+                          <p className='text-lg font-medium text-stone-700 md:text-xl'>
+                            Dengan ini dinyatakan bahwa
+                          </p>
+
+                          <div className='rounded-[1.5rem] border border-amber-200 bg-white/70 px-6 py-5 shadow-[0_10px_30px_rgba(120,73,17,0.08)] backdrop-blur-sm'>
+                            <p className='text-sm font-semibold uppercase tracking-[0.35em] text-amber-800/70'>
+                              Nama Siswa .{' '}
+                            </p>
+                            <p className='mt-2 text-2xl font-extrabold text-amber-950 md:text-4xl'>
+                              {foundStudent.name.toUpperCase()}
+                            </p>
+                          </div>
+
+                          <div className='rounded-[1.5rem] border border-amber-200 bg-white/70 px-6 py-5 shadow-[0_10px_30px_rgba(120,73,17,0.08)] backdrop-blur-sm'>
+                            <p className='text-sm font-semibold uppercase tracking-[0.35em] text-amber-800/70'>
+                              Nomor Induk Siswa Nasional
+                            </p>
+                            <p className='mt-2 text-xl font-bold tracking-[0.2em] text-amber-950 md:text-2xl'>
+                              {foundStudent.nisn}
+                            </p>
+                          </div>
+
+                          <div className='space-y-3 pt-2'>
+                            <p className='text-lg font-medium text-stone-700 md:text-xl'>
+                              Telah berhasil menyelesaikan program pembelajaran
+                              di
+                            </p>
+                            <p className='text-xl font-semibold text-amber-950 md:text-2xl'>
+                              SMA Negeri 1 Tenggarang
+                            </p>
+                            <p className='text-base text-stone-700 md:text-lg'>
+                              Tahun Ajaran 2025/2026
+                            </p>
+                          </div>
+
+                          <div className='pt-2'>
+                            <p className='text-base italic text-stone-600 md:text-lg'>
+                              "Semoga ilmu yang telah didapat dapat bermanfaat"
+                            </p>
+                            <p className='mt-2 text-sm text-stone-600 md:text-base'>
+                              untuk masa depan yang cerah
+                            </p>
+                          </div>
+                        </div>
+
+                        <div className='mt-12 grid gap-10 text-left md:grid-cols-[1fr_1fr]'>
+                          <div />
+                          <div className='text-center md:text-left'>
+                            <p className='text-sm font-medium text-stone-700 md:text-base'>
+                              Ditetapkan di Tenggarang tanggal 4 Mei 2026
+                            </p>
+                            <div className='h-12 md:h-16' />
+                            <p className='text-sm font-semibold tracking-[0.35em] text-stone-700'>
+                              Kepala Sekolah
+                            </p>
+                            <div className='h-4' />
+                            <p className='text-base font-semibold text-amber-950 md:text-lg'>
+                              Ahmad Junaidi, S.Ag, M.Pd.I
+                            </p>
+                            <p className='text-sm text-stone-700 md:text-base'>
+                              NIP. 197211072003121006
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className='flex gap-4 justify-center'>
+                    <button
+                      onClick={handleReset}
+                      className='bg-gradient-to-r from-[#f6dfb0] to-[#e8c858] text-[#06213a] py-2 px-6 rounded-lg font-semibold hover:shadow-lg transition'
+                    >
+                      Cari Siswa Lain
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
+            )}
           </div>
-        )}
-      </div>
 
-      {/* Footer */}
-      <div className='w-full text-center border-t-2 border-gray-300 py-6 mt-12'>
-        <p className='text-gray-700 font-semibold text-lg'>
-          TIM KURIKULUM SMASGA JUARA
-        </p>
+          {/* Footer */}
+          <div className='w-full text-center border-t-2 border-white/30 py-6 mt-12'>
+            <p className='text-white font-semibold text-lg drop-shadow-[0_1px_4px_rgba(0,0,0,0.45)]'>
+              TIM KURIKULUM SMASGA JUARA
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

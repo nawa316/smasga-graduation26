@@ -14,7 +14,7 @@ interface AnnouncementCountdownProps {
   onStateChange?: (isExpired: boolean) => void;
 }
 
-const ANNOUNCEMENT_TARGET_WIB = '2026-05-04T12:00:00+07:00';
+const ANNOUNCEMENT_TARGET_WIB = '2026-05-04T06:00:00+07:00';
 
 export default function AnnouncementCountdown({
   onStateChange,
@@ -74,65 +74,65 @@ export default function AnnouncementCountdown({
   }
 
   return (
-    <div className='relative overflow-hidden rounded-[1.5rem] border border-[#f6dfb0]/40 bg-gradient-to-br from-amber-500/10 to-orange-500/10 p-6 shadow-[0_10px_30px_rgba(217,119,6,0.2)] backdrop-blur-sm mb-8'>
+    <div className='relative overflow-hidden rounded-[1.5rem] border border-[#f6dfb0]/40 bg-gradient-to-br from-amber-500/10 to-orange-500/10 p-4 shadow-[0_10px_30px_rgba(217,119,6,0.2)] backdrop-blur-sm mb-8 sm:p-6'>
       <div className='text-center'>
-        <h3 className='text-xl font-bold text-[#f6dfb0] drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)] mb-4'>
+        <h3 className='text-lg font-bold leading-tight text-[#f6dfb0] drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)] mb-4 sm:text-xl'>
           Pengumuman Kelulusan Akan Dimulai Dalam:
         </h3>
-        <div className='grid grid-cols-4 gap-3'>
+        <div className='grid grid-cols-2 gap-3 sm:grid-cols-4'>
           {/* Days */}
-          <div className='relative overflow-hidden rounded-lg border border-[#f6dfb0]/30 bg-[#06213a]/60 p-3 shadow-[0_8px_20px_rgba(0,0,0,0.3)] backdrop-blur-sm'>
+          <div className='relative min-w-0 overflow-hidden rounded-lg border border-[#f6dfb0]/30 bg-[#06213a]/60 p-2 shadow-[0_8px_20px_rgba(0,0,0,0.3)] backdrop-blur-sm sm:p-3'>
             <div className='absolute inset-0 bg-gradient-to-br from-[#f6dfb0]/5 to-transparent' />
             <div className='relative'>
-              <div className='text-3xl font-black text-[#f6dfb0] drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]'>
+              <div className='text-2xl font-black text-[#f6dfb0] drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] sm:text-3xl'>
                 {String(countdown.days).padStart(2, '0')}
               </div>
-              <div className='text-xs font-semibold text-white/70 uppercase tracking-wider mt-1'>
+              <div className='mt-1 text-[0.65rem] font-semibold text-white/70 uppercase tracking-wide sm:text-xs'>
                 Hari
               </div>
             </div>
           </div>
 
           {/* Hours */}
-          <div className='relative overflow-hidden rounded-lg border border-[#f6dfb0]/30 bg-[#06213a]/60 p-3 shadow-[0_8px_20px_rgba(0,0,0,0.3)] backdrop-blur-sm'>
+          <div className='relative min-w-0 overflow-hidden rounded-lg border border-[#f6dfb0]/30 bg-[#06213a]/60 p-2 shadow-[0_8px_20px_rgba(0,0,0,0.3)] backdrop-blur-sm sm:p-3'>
             <div className='absolute inset-0 bg-gradient-to-br from-[#f6dfb0]/5 to-transparent' />
             <div className='relative'>
-              <div className='text-3xl font-black text-[#f6dfb0] drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]'>
+              <div className='text-2xl font-black text-[#f6dfb0] drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] sm:text-3xl'>
                 {String(countdown.hours).padStart(2, '0')}
               </div>
-              <div className='text-xs font-semibold text-white/70 uppercase tracking-wider mt-1'>
+              <div className='mt-1 text-[0.65rem] font-semibold text-white/70 uppercase tracking-wide sm:text-xs'>
                 Jam
               </div>
             </div>
           </div>
 
           {/* Minutes */}
-          <div className='relative overflow-hidden rounded-lg border border-[#f6dfb0]/30 bg-[#06213a]/60 p-3 shadow-[0_8px_20px_rgba(0,0,0,0.3)] backdrop-blur-sm'>
+          <div className='relative min-w-0 overflow-hidden rounded-lg border border-[#f6dfb0]/30 bg-[#06213a]/60 p-2 shadow-[0_8px_20px_rgba(0,0,0,0.3)] backdrop-blur-sm sm:p-3'>
             <div className='absolute inset-0 bg-gradient-to-br from-[#f6dfb0]/5 to-transparent' />
             <div className='relative'>
-              <div className='text-3xl font-black text-[#f6dfb0] drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]'>
+              <div className='text-2xl font-black text-[#f6dfb0] drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] sm:text-3xl'>
                 {String(countdown.minutes).padStart(2, '0')}
               </div>
-              <div className='text-xs font-semibold text-white/70 uppercase tracking-wider mt-1'>
+              <div className='mt-1 text-[0.65rem] font-semibold text-white/70 uppercase tracking-wide sm:text-xs'>
                 Menit
               </div>
             </div>
           </div>
 
           {/* Seconds */}
-          <div className='relative overflow-hidden rounded-lg border border-[#f6dfb0]/30 bg-[#06213a]/60 p-3 shadow-[0_8px_20px_rgba(0,0,0,0.3)] backdrop-blur-sm'>
+          <div className='relative min-w-0 overflow-hidden rounded-lg border border-[#f6dfb0]/30 bg-[#06213a]/60 p-2 shadow-[0_8px_20px_rgba(0,0,0,0.3)] backdrop-blur-sm sm:p-3'>
             <div className='absolute inset-0 bg-gradient-to-br from-[#f6dfb0]/5 to-transparent' />
             <div className='relative'>
-              <div className='text-3xl font-black text-[#f6dfb0] drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]'>
+              <div className='text-2xl font-black text-[#f6dfb0] drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] sm:text-3xl'>
                 {String(countdown.seconds).padStart(2, '0')}
               </div>
-              <div className='text-xs font-semibold text-white/70 uppercase tracking-wider mt-1'>
+              <div className='mt-1 text-[0.65rem] font-semibold text-white/70 uppercase tracking-wide sm:text-xs'>
                 Detik
               </div>
             </div>
           </div>
         </div>
-        <p className='text-sm text-white/75 mt-6'>
+        <p className='mt-6 text-xs leading-relaxed text-white/75 sm:text-sm'>
           Pengumuman hasil kelulusan bisa dibuka tanggal 4 Mei 2026 pukul 12:00
           WIB
         </p>

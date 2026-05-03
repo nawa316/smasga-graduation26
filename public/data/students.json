@@ -1,0 +1,1316 @@
+{
+  "students": [
+    {
+      "nis": "11884",
+      "name": "Abdhi Yuristyo Mahesha Putra"
+    },
+    {
+      "nis": "11883",
+      "name": "Achmad Bimbim Dwi Putra"
+    },
+    {
+      "nis": "11889",
+      "name": "Adinda Gendis Cahyaning Tyas"
+    },
+    {
+      "nis": "11896",
+      "name": "Ahmad Munir"
+    },
+    {
+      "nis": "11915",
+      "name": "Amelia Putri Ramadani"
+    },
+    {
+      "nis": "11925",
+      "name": "Aris Tiar Pratama"
+    },
+    {
+      "nis": "11939",
+      "name": "Bebit Shafik Putra Rhamadhana"
+    },
+    {
+      "nis": "11941",
+      "name": "Bezaliel Yitro Reginald"
+    },
+    {
+      "nis": "11948",
+      "name": "Cinta Auramadhaniah Hidayat"
+    },
+    {
+      "nis": "11962",
+      "name": "Devi Novitasari"
+    },
+    {
+      "nis": "11978",
+      "name": "Dwi Nurmala Andita Putri"
+    },
+    {
+      "nis": "11982",
+      "name": "Elisa Anggraeni"
+    },
+    {
+      "nis": "11998",
+      "name": "Fiqi Ibnu Abdullah Abraham"
+    },
+    {
+      "nis": "12008",
+      "name": "Gita Tyaga Hening Illahi"
+    },
+    {
+      "nis": "12034",
+      "name": "Khalif Java Rozikin"
+    },
+    {
+      "nis": "12043",
+      "name": "Maicel Tangkas Putra Napoleon"
+    },
+    {
+      "nis": "12057",
+      "name": "Mochammad Ramadhana"
+    },
+    {
+      "nis": "12058",
+      "name": "Mohammad Afdel Juniarta Mugi"
+    },
+    {
+      "nis": "12076",
+      "name": "Muhammad Agit Brilian Aprisa"
+    },
+    {
+      "nis": "12083",
+      "name": "Muhammad Farel Yulisetiawan"
+    },
+    {
+      "nis": "12085",
+      "name": "Muhammad Ibbrahim Maulana Goldy"
+    },
+    {
+      "nis": "12087",
+      "name": "Muhammad Ilham Arifin"
+    },
+    {
+      "nis": "12541",
+      "name": "Muhammad Ridwan Fauzi"
+    },
+    {
+      "nis": "12536",
+      "name": "Najagansa Pantra Saganda"
+    },
+    {
+      "nis": "12144",
+      "name": "Reno Gyanendra Lanjari"
+    },
+    {
+      "nis": "12152",
+      "name": "Rio Ramadhoni"
+    },
+    {
+      "nis": "12199",
+      "name": "Wira Yuda Sugiharto"
+    },
+    {
+      "nis": "11891",
+      "name": "Adinda Septiyani"
+    },
+    {
+      "nis": "11907",
+      "name": "Alief Jakfar Januar Akbar"
+    },
+    {
+      "nis": "11910",
+      "name": "Alisa Cantika Munawwaroh"
+    },
+    {
+      "nis": "11944",
+      "name": "Chelsilia Yudi Pratiwi"
+    },
+    {
+      "nis": "11946",
+      "name": "Chika Chesa Aprilia"
+    },
+    {
+      "nis": "11954",
+      "name": "Dava Malkan Maulana"
+    },
+    {
+      "nis": "12539",
+      "name": "Dhafa Nur Muhammad"
+    },
+    {
+      "nis": "11969",
+      "name": "Diana Elmira Fitri"
+    },
+    {
+      "nis": "11973",
+      "name": "Dimas Ramadan Candra Setiawan"
+    },
+    {
+      "nis": "11976",
+      "name": "Dinda Septika Ramadani"
+    },
+    {
+      "nis": "11983",
+      "name": "Enjelia Marza Zhafira"
+    },
+    {
+      "nis": "11993",
+      "name": "Fauzan Nur Fawwas"
+    },
+    {
+      "nis": "11999",
+      "name": "Fira Elsabila"
+    },
+    {
+      "nis": "12001",
+      "name": "Galih Akbar Fahrizal"
+    },
+    {
+      "nis": "12010",
+      "name": "Hafiz Setya Islamy"
+    },
+    {
+      "nis": "12016",
+      "name": "Hunaydah Eza Layli"
+    },
+    {
+      "nis": "12022",
+      "name": "Izza Afqorina Zulva"
+    },
+    {
+      "nis": "12051",
+      "name": "Melisa Olivia Putri"
+    },
+    {
+      "nis": "12055",
+      "name": "Mochamad Reza Pambudi"
+    },
+    {
+      "nis": "12074",
+      "name": "Muhammad Aditiya Prayetno"
+    },
+    {
+      "nis": "12075",
+      "name": "Muhammad Adryan Saputra"
+    },
+    {
+      "nis": "12099",
+      "name": "Muhammad Albarkisa'I"
+    },
+    {
+      "nis": "12082",
+      "name": "Muhammad Dinar Bayu Saputra"
+    },
+    {
+      "nis": "12093",
+      "name": "Muhammad Reza Saputra"
+    },
+    {
+      "nis": "12101",
+      "name": "Nabil Aldiansyah"
+    },
+    {
+      "nis": "12117",
+      "name": "Ni'Matus Shifa"
+    },
+    {
+      "nis": "12140",
+      "name": "Ratih Wahyu Hardini"
+    },
+    {
+      "nis": "12149",
+      "name": "Ricky Dwi Juliansyah"
+    },
+    {
+      "nis": "12158",
+      "name": "Rossa Nurul Hidayah"
+    },
+    {
+      "nis": "12177",
+      "name": "Siti Nurul Aini"
+    },
+    {
+      "nis": "12181",
+      "name": "Syahdatian Matalino Zahran"
+    },
+    {
+      "nis": "12200",
+      "name": "Wiratama Ega Putra"
+    },
+    {
+      "nis": "12205",
+      "name": "Yuniasih Sofia Rosadiana"
+    },
+    {
+      "nis": "11886",
+      "name": "Adelia Mei Efendi"
+    },
+    {
+      "nis": "11895",
+      "name": "Ahmad Eka Ramadhani"
+    },
+    {
+      "nis": "11898",
+      "name": "Ahmat Reza Aditia"
+    },
+    {
+      "nis": "11900",
+      "name": "Ainun Aulia Maya Sari"
+    },
+    {
+      "nis": "11903",
+      "name": "Alfa Sobriansyah Ramadhan"
+    },
+    {
+      "nis": "11904",
+      "name": "Alfi Dewiyatul Aqidah"
+    },
+    {
+      "nis": "11947",
+      "name": "Cindi Nur Azizah"
+    },
+    {
+      "nis": "11955",
+      "name": "David Dasilva"
+    },
+    {
+      "nis": "11956",
+      "name": "Deev Abdullah Zimraan"
+    },
+    {
+      "nis": "11961",
+      "name": "Devi Novita Sari"
+    },
+    {
+      "nis": "11966",
+      "name": "Dhayu Bintang Panduwinanda"
+    },
+    {
+      "nis": "11995",
+      "name": "Fenisya Laudya Sulistyawati"
+    },
+    {
+      "nis": "11997",
+      "name": "Findra Irawan"
+    },
+    {
+      "nis": "12003",
+      "name": "Gea Regina Sahertian"
+    },
+    {
+      "nis": "12019",
+      "name": "Intan Nofi Yatur Rahmah"
+    },
+    {
+      "nis": "12537",
+      "name": "Leny Ulfatul Khotimah"
+    },
+    {
+      "nis": "12054",
+      "name": "Mochammad Agha Wafirakha"
+    },
+    {
+      "nis": "12059",
+      "name": "Mohammad Alawi"
+    },
+    {
+      "nis": "12066",
+      "name": "Mohammad Zaky Rafi Abdillah"
+    },
+    {
+      "nis": "12071",
+      "name": "Muhammad Adil Huluqi"
+    },
+    {
+      "nis": "12069",
+      "name": "Muhammad Faturizal Efendi"
+    },
+    {
+      "nis": "12096",
+      "name": "Muhammad Rizkal Suwadi"
+    },
+    {
+      "nis": "12134",
+      "name": "Rahmad Yudha Pratama"
+    },
+    {
+      "nis": "12147",
+      "name": "Rey Chika Novela Firdaus"
+    },
+    {
+      "nis": "12159",
+      "name": "Sabrina Putri Naysilawati"
+    },
+    {
+      "nis": "12173",
+      "name": "Siti Maisaro"
+    },
+    {
+      "nis": "12179",
+      "name": "Sukaenah Haura Boransa"
+    },
+    {
+      "nis": "12183",
+      "name": "Tadqiratul Faizah"
+    },
+    {
+      "nis": "12195",
+      "name": "Vika Dwi Rizki Imaniyah"
+    },
+    {
+      "nis": "12198",
+      "name": "Vrionaldo July Revryan"
+    },
+    {
+      "nis": "11906",
+      "name": "Alfiyyah Karomatulloh"
+    },
+    {
+      "nis": "11943",
+      "name": "Bunga Novita Sari"
+    },
+    {
+      "nis": "11945",
+      "name": "Cherly Aprilya"
+    },
+    {
+      "nis": "11951",
+      "name": "Danang Dwi Andika"
+    },
+    {
+      "nis": "11963",
+      "name": "Devika Dwi Nurhaliza"
+    },
+    {
+      "nis": "11992",
+      "name": "Fausta Ganteng Putra Arjuna"
+    },
+    {
+      "nis": "12000",
+      "name": "Fitria Oktaviani"
+    },
+    {
+      "nis": "12006",
+      "name": "Gilga Triberlian Abdi Negara"
+    },
+    {
+      "nis": "12007",
+      "name": "Giofanny Aulia Yasmin"
+    },
+    {
+      "nis": "12012",
+      "name": "Hanifah Nur Islamia"
+    },
+    {
+      "nis": "12014",
+      "name": "Herlina Safiratul Aulia"
+    },
+    {
+      "nis": "12017",
+      "name": "Icha Dwi Cahyati"
+    },
+    {
+      "nis": "12026",
+      "name": "Jesycca Aura Shava Hafidzah"
+    },
+    {
+      "nis": "12036",
+      "name": "Kirana Aristo Wardhana"
+    },
+    {
+      "nis": "12064",
+      "name": "Mohammad Nazhim Firaz Maulana"
+    },
+    {
+      "nis": "12072",
+      "name": "Muhamad Miftahul Ulum"
+    },
+    {
+      "nis": "12092",
+      "name": "Muhammad Rafi Athaillah"
+    },
+    {
+      "nis": "12098",
+      "name": "Muhammad Saiful Rijal"
+    },
+    {
+      "nis": "12102",
+      "name": "Nabil Dwi Ramadhani"
+    },
+    {
+      "nis": "12106",
+      "name": "Nafila Aprilia"
+    },
+    {
+      "nis": "12113",
+      "name": "Nandana Gian Wursito"
+    },
+    {
+      "nis": "12116",
+      "name": "Nazhifah Nur Alfiyah"
+    },
+    {
+      "nis": "12118",
+      "name": "Nisrina Aurelia Putri"
+    },
+    {
+      "nis": "12120",
+      "name": "Novianto Ilham Athahillah Harandi"
+    },
+    {
+      "nis": "12133",
+      "name": "Rafi Maulidan Lukmana"
+    },
+    {
+      "nis": "12148",
+      "name": "Ria Kafina Batuliya"
+    },
+    {
+      "nis": "12151",
+      "name": "Rini Dwi Andini"
+    },
+    {
+      "nis": "12169",
+      "name": "Silva Aliyah Putri"
+    },
+    {
+      "nis": "12170",
+      "name": "Silva Dwi Ananda"
+    },
+    {
+      "nis": "12178",
+      "name": "Sofian Adi Hidayat"
+    },
+    {
+      "nis": "12187",
+      "name": "Thasya Kamilah"
+    },
+    {
+      "nis": "12190",
+      "name": "Tri Chaesa Ria Nurhayati"
+    },
+    {
+      "nis": "12203",
+      "name": "Yorghi Hafiizh Semesta"
+    },
+    {
+      "nis": "12204",
+      "name": "Yuliandira Fergiansyah"
+    },
+    {
+      "nis": "11888",
+      "name": "Adi Surya Raharjo"
+    },
+    {
+      "nis": "11893",
+      "name": "Adistya Zahrotulsita"
+    },
+    {
+      "nis": "11899",
+      "name": "Ailsa Dwi Dzakirah"
+    },
+    {
+      "nis": "11924",
+      "name": "Aris Mubarrok"
+    },
+    {
+      "nis": "11928",
+      "name": "Aulia Ayu Ramadhani"
+    },
+    {
+      "nis": "11929",
+      "name": "Aulia Sinta Ramadani"
+    },
+    {
+      "nis": "11931",
+      "name": "Aurelia Syarifah Bilqis"
+    },
+    {
+      "nis": "11958",
+      "name": "Deryna Mutiara Sadewo"
+    },
+    {
+      "nis": "11970",
+      "name": "Diaratul Jannah"
+    },
+    {
+      "nis": "11972",
+      "name": "Dimas Ilman Maulana"
+    },
+    {
+      "nis": "11981",
+      "name": "Dzaky Aurianto Putra Dwi Wijaya"
+    },
+    {
+      "nis": "11986",
+      "name": "Fahril Nur Alim Billah"
+    },
+    {
+      "nis": "11991",
+      "name": "Fatih Zulfzidane Habib"
+    },
+    {
+      "nis": "11994",
+      "name": "Favian Akmal Pandya"
+    },
+    {
+      "nis": "12005",
+      "name": "Gilang Budi Dwi Darmawan"
+    },
+    {
+      "nis": "12031",
+      "name": "Kayla Syahirah Khansa"
+    },
+    {
+      "nis": "12039",
+      "name": "Leo Bambang Nurdiansyah"
+    },
+    {
+      "nis": "12046",
+      "name": "Mar Atun Nabila"
+    },
+    {
+      "nis": "12062",
+      "name": "Mohammad Haikal Fikri"
+    },
+    {
+      "nis": "12065",
+      "name": "Mohammad Sevi Fahrezi"
+    },
+    {
+      "nis": "12077",
+      "name": "Muhammad Akmal Alzam Zaki"
+    },
+    {
+      "nis": "12080",
+      "name": "Muhammad Alif Febriansyah"
+    },
+    {
+      "nis": "12084",
+      "name": "Muhammad Gusti Albiansyah"
+    },
+    {
+      "nis": "12089",
+      "name": "Muhammad Irhamni Maulana"
+    },
+    {
+      "nis": "12095",
+      "name": "Muhammad Riski Agung Wijaya"
+    },
+    {
+      "nis": "12097",
+      "name": "Muhammad Romadoni"
+    },
+    {
+      "nis": "12105",
+      "name": "Nadifa Salsa Bila"
+    },
+    {
+      "nis": "12131",
+      "name": "Rafael Aldiansyah Putra"
+    },
+    {
+      "nis": "12138",
+      "name": "Raka Dharis Putra Adi"
+    },
+    {
+      "nis": "12150",
+      "name": "Rifki"
+    },
+    {
+      "nis": "12153",
+      "name": "Riska Dwi Yulia Diyanti"
+    },
+    {
+      "nis": "12154",
+      "name": "Riski Maulani Aprilia"
+    },
+    {
+      "nis": "12157",
+      "name": "Rohilul Ibad"
+    },
+    {
+      "nis": "12196",
+      "name": "Vindi Fitrih Ramadani"
+    },
+    {
+      "nis": "11885",
+      "name": "Abirama Parisya Bagaskara"
+    },
+    {
+      "nis": "11887",
+      "name": "Adi Brata Malik Wijaya"
+    },
+    {
+      "nis": "11902",
+      "name": "Aldo Sandra Dewa"
+    },
+    {
+      "nis": "11916",
+      "name": "Amirah Balafif"
+    },
+    {
+      "nis": "11919",
+      "name": "Andriansah"
+    },
+    {
+      "nis": "11938",
+      "name": "Bagas Moelyo Diputro"
+    },
+    {
+      "nis": "11942",
+      "name": "Bintang Ristawan"
+    },
+    {
+      "nis": "12871",
+      "name": "Daffa Al Firdzan Winardy"
+    },
+    {
+      "nis": "11950",
+      "name": "Damar Aji Prastya"
+    },
+    {
+      "nis": "11952",
+      "name": "Daniel Dwi Kristianto"
+    },
+    {
+      "nis": "11964",
+      "name": "Devila Elsa Syahrani"
+    },
+    {
+      "nis": "11977",
+      "name": "Duwi Rizqi Yusrofiana"
+    },
+    {
+      "nis": "11985",
+      "name": "Ezzy Fachri Aresta Rahman"
+    },
+    {
+      "nis": "12004",
+      "name": "Giezcha Sabilal Muttaqin"
+    },
+    {
+      "nis": "12028",
+      "name": "Kaka Permana Putra Hadi"
+    },
+    {
+      "nis": "12037",
+      "name": "Kirana Maharani"
+    },
+    {
+      "nis": "12045",
+      "name": "Mamluatul Afrah"
+    },
+    {
+      "nis": "12048",
+      "name": "Maulana Nur Ramadhani"
+    },
+    {
+      "nis": "12049",
+      "name": "Mayda Fajar Rohmania"
+    },
+    {
+      "nis": "12060",
+      "name": "Mohammad Fajarroziq Wijaya"
+    },
+    {
+      "nis": "12091",
+      "name": "Muhammad Nufal Shafriyanto"
+    },
+    {
+      "nis": "12094",
+      "name": "Muhammad Rifqi Ahladzikri"
+    },
+    {
+      "nis": "12122",
+      "name": "Nuovan Widiyantoro"
+    },
+    {
+      "nis": "12123",
+      "name": "Nur Hikmah Tias Anggraini"
+    },
+    {
+      "nis": "12135",
+      "name": "Rahman Halim Pamungkas"
+    },
+    {
+      "nis": "12136",
+      "name": "Rahmatul Izra Rafi Effendi"
+    },
+    {
+      "nis": "12141",
+      "name": "Regina Zahirah Salsabila"
+    },
+    {
+      "nis": "12164",
+      "name": "Seha Fajariah"
+    },
+    {
+      "nis": "12165",
+      "name": "Sekti Arnum Mardika"
+    },
+    {
+      "nis": "12171",
+      "name": "Sindi Adelia Putri"
+    },
+    {
+      "nis": "12176",
+      "name": "Siti Nur Kholizah"
+    },
+    {
+      "nis": "12185",
+      "name": "Taufiqih Nur Mabruri"
+    },
+    {
+      "nis": "12210",
+      "name": "Zulfa Endah Alfiana"
+    },
+    {
+      "nis": "12211",
+      "name": "Zulfi Indah Andriani"
+    },
+    {
+      "nis": "11890",
+      "name": "Adinda Nadifatul Aulia"
+    },
+    {
+      "nis": "11905",
+      "name": "Alfiyatus Sholehah"
+    },
+    {
+      "nis": "11917",
+      "name": "Andien Dwi Arum Lharissa"
+    },
+    {
+      "nis": "11918",
+      "name": "Andreas Dwi Syahputra"
+    },
+    {
+      "nis": "11922",
+      "name": "Aprilia Puji Lestari"
+    },
+    {
+      "nis": "11933",
+      "name": "Ayu Andini"
+    },
+    {
+      "nis": "12866",
+      "name": "Dani Fatkulloh Desianto"
+    },
+    {
+      "nis": "11953",
+      "name": "Daniel Padma Antad Pribadi"
+    },
+    {
+      "nis": "11957",
+      "name": "Della Berliana Surya Salsabila"
+    },
+    {
+      "nis": "11967",
+      "name": "Dheca Yulia Nurazizah"
+    },
+    {
+      "nis": "11974",
+      "name": "Dinda Ayuni"
+    },
+    {
+      "nis": "11979",
+      "name": "Dwi Wulandari Agustin"
+    },
+    {
+      "nis": "12015",
+      "name": "Hidayatullah Zainur Ibad"
+    },
+    {
+      "nis": "12020",
+      "name": "Irma Ayu Wahyu Tianingdiah"
+    },
+    {
+      "nis": "12029",
+      "name": "Karina Amelia Putri"
+    },
+    {
+      "nis": "12035",
+      "name": "Khunsa Salsabilla"
+    },
+    {
+      "nis": "12038",
+      "name": "Lenti Aulia Dona Nefertiti"
+    },
+    {
+      "nis": "12040",
+      "name": "Letissa Azarenka"
+    },
+    {
+      "nis": "12047",
+      "name": "Marsa Aini Riski Sukriyanto"
+    },
+    {
+      "nis": "12213",
+      "name": "Moh. Jakfar Sadiq"
+    },
+    {
+      "nis": "12067",
+      "name": "Ms. Afnan Zakhruf Firmansyah"
+    },
+    {
+      "nis": "12081",
+      "name": "Muhammad Alqi Bima Perdana"
+    },
+    {
+      "nis": "12088",
+      "name": "Muhammad Iqbal Hardy Bagus Waluyo"
+    },
+    {
+      "nis": "12100",
+      "name": "Mukhammad Hikam Tamza Wiradigda"
+    },
+    {
+      "nis": "12108",
+      "name": "Nagista Cahya Suci Rojabi"
+    },
+    {
+      "nis": "12109",
+      "name": "Naiel Fahmi Istighfarly"
+    },
+    {
+      "nis": "12111",
+      "name": "Naiyla Azzahro"
+    },
+    {
+      "nis": "12112",
+      "name": "Najwa Zahra Shoffiyah"
+    },
+    {
+      "nis": "12119",
+      "name": "Nobel Firmansyah"
+    },
+    {
+      "nis": "12124",
+      "name": "Nurril Stya Yulianingsi"
+    },
+    {
+      "nis": "12127",
+      "name": "Putri Naila Rahmatika"
+    },
+    {
+      "nis": "12139",
+      "name": "Rameyza Ulya Mukhbita"
+    },
+    {
+      "nis": "12160",
+      "name": "Sandy Febriyanasyah Putra"
+    },
+    {
+      "nis": "12201",
+      "name": "Yoga Gusti Firmansyah"
+    },
+    {
+      "nis": "12208",
+      "name": "Zahra Anggun Anggraini"
+    },
+    {
+      "nis": "11892",
+      "name": "Adinda Zhafa Septia Ramadhani"
+    },
+    {
+      "nis": "11894",
+      "name": "Agista Rena Ningtiyas"
+    },
+    {
+      "nis": "11914",
+      "name": "Alya Puspita Dewi"
+    },
+    {
+      "nis": "11927",
+      "name": "Aulia Aini Salsabila"
+    },
+    {
+      "nis": "11930",
+      "name": "Aurelia Indriana Citra Anantha"
+    },
+    {
+      "nis": "11940",
+      "name": "Berlian Syahwa Anugrah Hergianto"
+    },
+    {
+      "nis": "11965",
+      "name": "Devrina Dwiyanti"
+    },
+    {
+      "nis": "11968",
+      "name": "Diah Ayu Puspita Sari"
+    },
+    {
+      "nis": "11971",
+      "name": "Dimas Agung Prasetyo"
+    },
+    {
+      "nis": "11980",
+      "name": "Dybran Albany Wijaksono"
+    },
+    {
+      "nis": "11984",
+      "name": "Ezzar Nazarreno Al Fathir"
+    },
+    {
+      "nis": "12013",
+      "name": "Haris Sofiyan Siswantyo"
+    },
+    {
+      "nis": "12018",
+      "name": "Ilun Daris Fandriansyah"
+    },
+    {
+      "nis": "12021",
+      "name": "Irmawati"
+    },
+    {
+      "nis": "12023",
+      "name": "Jadidah Eliesta Salsabila"
+    },
+    {
+      "nis": "12025",
+      "name": "Janu Rasya Dwi Anggara"
+    },
+    {
+      "nis": "12032",
+      "name": "Kerin Nor Indah Aprilla"
+    },
+    {
+      "nis": "12033",
+      "name": "Keysa Alicia Wulandari"
+    },
+    {
+      "nis": "12053",
+      "name": "Misdiyatun Putri"
+    },
+    {
+      "nis": "12056",
+      "name": "Mochamad Varelino Putra Efendi"
+    },
+    {
+      "nis": "12078",
+      "name": "Muhammad Ali Fariqi"
+    },
+    {
+      "nis": "12086",
+      "name": "Muhammad Ikram Kautsar"
+    },
+    {
+      "nis": "12126",
+      "name": "Putri Ayu Ramadani"
+    },
+    {
+      "nis": "12128",
+      "name": "Putri Nur Halimah"
+    },
+    {
+      "nis": "12142",
+      "name": "Rendra Prayoga"
+    },
+    {
+      "nis": "12143",
+      "name": "Reni Wildatul Hasanah"
+    },
+    {
+      "nis": "12155",
+      "name": "Rizalah Muhammad Fahmiyahya"
+    },
+    {
+      "nis": "12161",
+      "name": "Sarita Dwi Aurelia Rosyadah"
+    },
+    {
+      "nis": "12167",
+      "name": "Shafira Ramadhani"
+    },
+    {
+      "nis": "12172",
+      "name": "Siti Komariyatul Hasanah"
+    },
+    {
+      "nis": "12186",
+      "name": "Tegar Mubaroh Satya Putra"
+    },
+    {
+      "nis": "12189",
+      "name": "Tiara Dwi Putri Loja"
+    },
+    {
+      "nis": "12193",
+      "name": "Vanesha Kayla Mumtaz"
+    },
+    {
+      "nis": "12207",
+      "name": "Zahra Allya Prayitno"
+    },
+    {
+      "nis": "11897",
+      "name": "Ahmad Nazril Irham"
+    },
+    {
+      "nis": "11909",
+      "name": "Alifia Mareta Sabila"
+    },
+    {
+      "nis": "11921",
+      "name": "Anggun Tabitha Dwi Az Zahra"
+    },
+    {
+      "nis": "11923",
+      "name": "Arini Dwi Wulandari"
+    },
+    {
+      "nis": "11926",
+      "name": "Arvin Bramasyuda"
+    },
+    {
+      "nis": "11932",
+      "name": "Ayla Zivana Rimadani"
+    },
+    {
+      "nis": "11936",
+      "name": "Azmi Hanif Ramadhani"
+    },
+    {
+      "nis": "12215",
+      "name": "Cindy Aulia Azzahra"
+    },
+    {
+      "nis": "11949",
+      "name": "Dafa Fairus Apriliano"
+    },
+    {
+      "nis": "11959",
+      "name": "Desti Audi Utami"
+    },
+    {
+      "nis": "11987",
+      "name": "Fara Aulia Azhar"
+    },
+    {
+      "nis": "11990",
+      "name": "Farina Putri Elwanda"
+    },
+    {
+      "nis": "12009",
+      "name": "Glen Alifah Bintang"
+    },
+    {
+      "nis": "12024",
+      "name": "Jani Nasyilla Putri Dwi Anggari"
+    },
+    {
+      "nis": "12030",
+      "name": "Kasih Sriwulan Sari"
+    },
+    {
+      "nis": "12050",
+      "name": "Mecca Medina Heksaprila"
+    },
+    {
+      "nis": "12073",
+      "name": "Muhammad Abdallah Aromdoni"
+    },
+    {
+      "nis": "12068",
+      "name": "Muhammad Dhega Athaillah"
+    },
+    {
+      "nis": "12070",
+      "name": "Muhammad Rafa Rafiansyah"
+    },
+    {
+      "nis": "12104",
+      "name": "Nabilah Wasilatul Bariroh"
+    },
+    {
+      "nis": "12110",
+      "name": "Naisyah Celsy Fajariyah"
+    },
+    {
+      "nis": "12114",
+      "name": "Naufal Mudzaky Al Arief"
+    },
+    {
+      "nis": "12121",
+      "name": "Novitasari Nurya"
+    },
+    {
+      "nis": "12125",
+      "name": "Permadi Adji Pangestu"
+    },
+    {
+      "nis": "12130",
+      "name": "Raditya Widarta"
+    },
+    {
+      "nis": "12156",
+      "name": "Robi'Atul Adawiyah"
+    },
+    {
+      "nis": "12162",
+      "name": "Saskia Kirana Damayanti"
+    },
+    {
+      "nis": "12166",
+      "name": "Selina Jasmine Pujiono"
+    },
+    {
+      "nis": "12174",
+      "name": "Siti Murni Nur Kholifah"
+    },
+    {
+      "nis": "12191",
+      "name": "Triana Latifah Lestari"
+    },
+    {
+      "nis": "12192",
+      "name": "Triyadi Rezky Maulana"
+    },
+    {
+      "nis": "12214",
+      "name": "Veda Astrella Natalia Putri"
+    },
+    {
+      "nis": "12209",
+      "name": "Zahwa Balafif"
+    },
+    {
+      "nis": "11901",
+      "name": "Ajeng Indah Maulani"
+    },
+    {
+      "nis": "11908",
+      "name": "Alifful Khoyri"
+    },
+    {
+      "nis": "11911",
+      "name": "Alrino Febry Mayarano"
+    },
+    {
+      "nis": "11912",
+      "name": "Alvia Wulandari"
+    },
+    {
+      "nis": "11913",
+      "name": "Alvina Auryin Salsabila"
+    },
+    {
+      "nis": "11920",
+      "name": "Angga Gathan Syah"
+    },
+    {
+      "nis": "11934",
+      "name": "Ayu Gracea Putri"
+    },
+    {
+      "nis": "11935",
+      "name": "Azisyah Rozalian"
+    },
+    {
+      "nis": "11960",
+      "name": "Deva Nur Wahyudi Mir'At Jamilah"
+    },
+    {
+      "nis": "11996",
+      "name": "Ferdy Pratama Ardiansyah"
+    },
+    {
+      "nis": "12002",
+      "name": "Galih Sheva Davila"
+    },
+    {
+      "nis": "12011",
+      "name": "Hamdan Syarief Nabil Ramdani"
+    },
+    {
+      "nis": "12027",
+      "name": "Jovita Andini"
+    },
+    {
+      "nis": "12041",
+      "name": "Lutfiah Rosa"
+    },
+    {
+      "nis": "12063",
+      "name": "Mohammad Ibrahim Musa"
+    },
+    {
+      "nis": "12090",
+      "name": "Muhammad Nagib Abdi Robbi"
+    },
+    {
+      "nis": "12103",
+      "name": "Nabila Feyruz Cholisa"
+    },
+    {
+      "nis": "12107",
+      "name": "Nafilah Amelia Dzaqira"
+    },
+    {
+      "nis": "12115",
+      "name": "Naura Fathia Zahro"
+    },
+    {
+      "nis": "12129",
+      "name": "Queena Naflyta Rosalind"
+    },
+    {
+      "nis": "12132",
+      "name": "Rafael Alif'Ka Putra Kirana"
+    },
+    {
+      "nis": "12137",
+      "name": "Raihan Firdaus Putra"
+    },
+    {
+      "nis": "12145",
+      "name": "Reva Amalia Damayanti"
+    },
+    {
+      "nis": "12146",
+      "name": "Revaliantina Sudirman"
+    },
+    {
+      "nis": "12163",
+      "name": "Sasya Robiati Al Adhawiya"
+    },
+    {
+      "nis": "12168",
+      "name": "Sherena Desky Priyantika"
+    },
+    {
+      "nis": "12175",
+      "name": "Siti Nur Aini"
+    },
+    {
+      "nis": "12180",
+      "name": "Sultan Zaidan Zafi Azzuhdi"
+    },
+    {
+      "nis": "12182",
+      "name": "Syakira Salsabila Siswanto"
+    },
+    {
+      "nis": "12184",
+      "name": "Talitha Shafiqah Nuraini"
+    },
+    {
+      "nis": "12188",
+      "name": "Thoriq Maulana Firdaus"
+    },
+    {
+      "nis": "12194",
+      "name": "Variel Firdaus"
+    },
+    {
+      "nis": "12197",
+      "name": "Violeta Dafila Herdiana"
+    },
+    {
+      "nis": "12202",
+      "name": "Yojanna Parikesit"
+    }
+  ]
+}

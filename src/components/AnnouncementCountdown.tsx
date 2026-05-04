@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface CountdownTime {
   days: number;
@@ -26,14 +26,21 @@ export default function AnnouncementCountdown({
     seconds: 0,
     isExpired: false,
   });
+  const lastExpiredStateRef = useRef<boolean | null>(null);
 
   useEffect(() => {
     const calculateCountdown = () => {
       const now = new Date();
       const targetDate = new Date(ANNOUNCEMENT_TARGET_WIB);
       const difference = targetDate.getTime() - now.getTime();
+      const isExpired = difference <= 0;
 
-      if (difference <= 0) {
+      if (lastExpiredStateRef.current !== isExpired) {
+        lastExpiredStateRef.current = isExpired;
+        onStateChange?.(isExpired);
+      }
+
+      if (isExpired) {
         setCountdown({
           days: 0,
           hours: 0,
@@ -41,7 +48,6 @@ export default function AnnouncementCountdown({
           seconds: 0,
           isExpired: true,
         });
-        onStateChange?.(true);
         return;
       }
 
@@ -57,7 +63,6 @@ export default function AnnouncementCountdown({
         seconds,
         isExpired: false,
       });
-      onStateChange?.(false);
     };
 
     // Calculate immediately

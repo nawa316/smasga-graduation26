@@ -5,36 +5,21 @@ import { useEffect, useRef, useState } from 'react';
 
 import AnnouncementCountdown from '@/components/AnnouncementCountdown';
 
+import studentsData from '~/data/students.json';
+
 export type Student = {
   nisn: string;
   name: string;
 };
 
 export default function GraduationPage() {
-  const [students, setStudents] = useState<Student[]>([]);
+  const students = studentsData.students as Student[];
   const [nis, setNis] = useState('');
   const [foundStudent, setFoundStudent] = useState<Student | null>(null);
   const [error, setError] = useState('');
-  const [loading, setLoading] = useState(true);
   const [certificateRevealed, setCertificateRevealed] = useState(false);
   const [isCountdownExpired, setIsCountdownExpired] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
-
-  useEffect(() => {
-    const loadStudents = async () => {
-      try {
-        const response = await fetch('/data/students.json');
-        const data = await response.json();
-        setStudents(data.students);
-        setLoading(false);
-      } catch (err) {
-        setError('Gagal memuat data siswa');
-        setLoading(false);
-      }
-    };
-
-    loadStudents();
-  }, []);
 
   useEffect(() => {
     if (foundStudent && audioRef.current) {
@@ -90,22 +75,6 @@ export default function GraduationPage() {
     }
   };
 
-  if (loading) {
-    return (
-      <div
-        className='min-h-screen flex items-center justify-center bg-[#001f3f]'
-        style={{
-          backgroundImage: 'url(/images/background.png)',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className='text-white text-center'>Memuat data...</div>
-      </div>
-    );
-  }
-
   return (
     <div
       className='min-h-screen bg-[#001f3f] py-8 px-4 flex flex-col'
@@ -135,6 +104,7 @@ export default function GraduationPage() {
                     alt='Logo SMASGA'
                     width={128}
                     height={128}
+                    priority
                     className='h-24 w-24 drop-shadow-[0_6px_14px_rgba(0,0,0,0.18)] md:h-28 md:w-28'
                   />
                 </div>

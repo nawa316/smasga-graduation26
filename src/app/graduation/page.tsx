@@ -178,21 +178,35 @@ export default function GraduationPage() {
               </div>
             ) : (
               // Certificate View - Normal Layout
-              <div className='max-w-4xl mx-auto w-full'>
+              <div
+                className='max-w-4xl mx-auto w-full overflow-hidden'
+                style={{
+                  clipPath: 'inset(0 round 2rem)',
+                  WebkitMaskImage: 'linear-gradient(#fff,#fff)',
+                  maskImage: 'linear-gradient(#fff,#fff)',
+                  isolation: 'isolate',
+                }}
+              >
                 {/* Countdown */}
                 <AnnouncementCountdown />
 
                 {/* Certificate */}
                 <div className='space-y-6'>
-                  <div className='relative overflow-hidden rounded-[2rem] border border-[#f6dfb0]/40 bg-gradient-to-br from-[#06213a]/20 to-[#0f3354]/20 p-3 shadow-[0_10px_28px_rgba(6,33,58,0.2)] sm:p-4 sm:shadow-[0_24px_80px_rgba(6,33,58,0.35)] sm:backdrop-blur-sm'>
+                  <div
+                    className='relative overflow-hidden rounded-[2rem] border border-[#f6dfb0]/40 bg-gradient-to-br from-[#06213a]/20 to-[#0f3354]/20 p-3 shadow-[0_10px_28px_rgba(6,33,58,0.2)] sm:p-4 sm:shadow-[0_24px_80px_rgba(6,33,58,0.35)] sm:backdrop-blur-sm'
+                    style={{ clipPath: 'inset(0 round 2rem)' }}
+                  >
                     <div
-                      className={`relative rounded-[1.5rem] border border-[#f6dfb0]/50 bg-gradient-to-b from-[#fffdf7] to-[#fff7ea] px-4 py-6 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.8),_0_1px_4px_rgba(6,33,58,0.1)] transition-all duration-500 ease-out sm:px-6 sm:shadow-[inset_0_1px_0_rgba(255,255,255,0.8),_0_2px_8px_rgba(6,33,58,0.15)] md:p-12 md:duration-700 ${
+                      className={`relative rounded-[2rem] border border-[#f6dfb0]/50 bg-gradient-to-b from-[#fffdf7] to-[#fff7ea] px-4 py-6 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.8),_0_1px_4px_rgba(6,33,58,0.1)] transition-all duration-500 ease-out sm:px-6 sm:shadow-[inset_0_1px_0_rgba(255,255,255,0.8),_0_2px_8px_rgba(6,33,58,0.15)] md:p-12 md:duration-700 ${
                         certificateRevealed
                           ? 'opacity-100 translate-y-0'
                           : 'opacity-0 translate-y-4'
                       }`}
                     >
-                      <div className='pointer-events-none absolute inset-0 overflow-hidden rounded-[1.5rem]'>
+                      <div
+                        className='pointer-events-none absolute inset-0 overflow-hidden rounded-[2rem]'
+                        style={{ clipPath: 'inset(0 round 2rem)' }}
+                      >
                         <div
                           className={`absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-[#6a3518] via-[#9d5625] to-[#d8a05c] opacity-95 transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] sm:duration-1000 ${
                             certificateRevealed
@@ -225,7 +239,7 @@ export default function GraduationPage() {
                             Dengan ini dinyatakan bahwa
                           </p>
 
-                          <div className='rounded-[1.5rem] border border-amber-200 bg-white/70 px-4 py-4 shadow-[0_10px_30px_rgba(120,73,17,0.08)] backdrop-blur-sm sm:px-6 sm:py-5'>
+                          <div className='rounded-[2rem] overflow-hidden border border-amber-200 bg-white/70 px-4 py-4 shadow-[0_10px_30px_rgba(120,73,17,0.08)] backdrop-blur-sm sm:px-6 sm:py-5'>
                             <p className='text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-amber-800/70 sm:text-sm sm:tracking-[0.35em]'>
                               Nama Siswa .{' '}
                             </p>
@@ -234,7 +248,7 @@ export default function GraduationPage() {
                             </p>
                           </div>
 
-                          <div className='rounded-[1.5rem] border border-amber-200 bg-white/70 px-4 py-4 shadow-[0_10px_30px_rgba(120,73,17,0.08)] backdrop-blur-sm sm:px-6 sm:py-5'>
+                          <div className='rounded-[2rem] overflow-hidden border border-amber-200 bg-white/70 px-4 py-4 shadow-[0_10px_30px_rgba(120,73,17,0.08)] backdrop-blur-sm sm:px-6 sm:py-5'>
                             <p className='text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-amber-800/70 sm:text-sm sm:tracking-[0.35em]'>
                               Nomor Induk Siswa Nasional
                             </p>
